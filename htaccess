@@ -1,0 +1,9 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^olivr\.vg$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.olivr\.vg$
+RewriteRule (.*) http\:\/\/timoliver\.id\.au\/$1 [R=301,L,NE]
+
+RewriteRule ^(.+)\.(php)$ http\:\/\/timoliver\.id\.au\/ [R=301,L,NE]
+RewriteRule ^([a-z]+)$ /?lang=$1 [NC]

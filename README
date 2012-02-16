@@ -1,0 +1,22 @@
+***********************************************
+TimOliver.id.au vCard Source Code
+By Timothy 'TiM' Oliver
+
+***********************************************
+
+Since there was a little bit of interest in how
+it was put together, here is the source code
+for my online vCard (http://TimOliver.id.au/) 
+and all of the assets in its entirety.
+
+It's coded entirely in PHP and is targeted at
+HTML5/CSS3.
+
+***********************************************
+
+Some portions of the code are under MIT license,
+but for the rest of the code, feel free to use
+it where-ever (attribution would be appreciated,
+but isn't required.)
+
+***********************************************

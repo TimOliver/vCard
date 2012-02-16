@@ -1,0 +1,90 @@
+/*
+* Tim Oliver vCard Styles
+* 2012
+*/
+
+@import url(common.css);
+
+html,body{ height:100%; width:100%; margin: 0; padding: 0; }
+
+body 
+{
+	text-align: center;
+	min-height: 615px;/* for good browsers*/
+	min-width: 980px;/* for good browsers*/
+}
+
+#highlight
+{
+	position: absolute;
+	top: -200px;
+	left: -155px;
+	width: 1269px;
+	height: 745px;
+	background: transparent url(../img/bg_highlight.png) top no-repeat;
+	z-index: 10;
+}
+
+#vertical_container
+{
+    margin-top: -295px;
+    height: 50%;
+    width: 100%;
+    float: left;
+}
+
+#horizontal_container
+{
+	width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 615px;
+    text-align:left;
+    position: relative;
+    clear: both;
+}
+
+#content_container
+{
+	position: absolute;
+	z-index: 30;
+}
+
+#language_icon
+{
+	right: 5px;
+	top: -22px;
+}
+
+#content
+{
+	position: relative;
+	margin-top: 18px;
+	width: 980px;
+	height: 550px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	-moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.column 
+{
+	position: relative;
+	padding: 20px;
+	width: 280px;
+	float: left;
+	height: 510px;
+	border-left: 1px solid #555;
+	border-right: 1px solid #111;
+}
+
+.first_column { border-left: 0 none !important; }
+.last_column { border-right: 0 none !important; }
+
+#footer 
+{
+	width: 960px;
+}

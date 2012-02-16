@@ -1,0 +1,320 @@
+/*
+* Tim Oliver vCard Styles
+* 2012
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+body
+{
+	background: #373737 url(../img/bg.png);
+	color: #fff;
+	/*font-family:  "Lucida Grande", Tahoma, Arial, sans-serif;	*/
+	font-size: 10pt;
+	font-weight: normal;
+	text-shadow: 0 -1px 0 #000;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+body[data-lang="ja"]
+{
+	font-family: "Shin Go", "Heisei Kaku Gothic W5", sans-serif;
+}
+
+a 
+{
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 0px;
+	border-bottom: 1px solid #fff;
+}
+
+a:hover
+{
+	color: #c90000;
+	cursor: pointer;
+}
+
+#content
+{
+	background: url(../img/content_bg.png );
+	text-align: left;
+	border-bottom: 1px solid #666;
+}
+
+#profile_pic
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);
+	box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);
+	border-bottom: 1px solid #444;
+}
+
+h1, h2, h3, h4
+{
+	font-weight: normal;
+	font-family: 'Oswald', sans-serif;
+}
+
+h1[data-lang="ja"], 
+h2[data-lang="ja"], 
+h3[data-lang="ja"], 
+h4[data-lang="ja"]
+{
+	font-family: "Ryumin Light-KL", "Kyokasho ICA", "Futo Min A101", serif;
+}
+
+h1
+{
+	font-size: 22pt;
+	margin-bottom: 3px;
+}
+
+h1[data-lang="ja"]
+{
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+h2
+{
+	font-size: 16pt;
+	line-height: 120%;
+}
+
+h4
+{
+	font-size: 9pt;
+	line-height: 130%;
+}
+
+#language_icon
+{
+	position: absolute;
+	display: block;
+	border: 0 !important;
+	padding: 5px;
+}
+
+.social_icons
+{
+	position: relative;
+	display: block;
+	background: transparent url(../img/social_icon_sheet.png) no-repeat;
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+	text-decoration: none;
+	border-bottom: 0 none;
+}
+
+.profile_name_container 
+{
+	position: absolute;
+	top: 50px;
+	left: 151px;
+	width: 155px;
+}
+
+.blurb
+{
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 12pt;
+	line-height: 150%;
+}
+
+.blurb[data-lang="ja"]
+{
+	font-size: 11pt;
+}
+
+.blurb p 
+{
+	margin: 12px 0;
+}
+
+.blurb[data-lang="ja"] p 
+{
+	margin: 13px 0;
+}
+
+#vcard_button
+{
+	background: transparent url(../img/vcard_button.png) no-repeat;
+	display: block;
+	width: 285px;
+	height: 66px;
+	color: #fff;
+	text-decoration: none;
+	left: 20px;
+	bottom: 20px;
+	font-size: 15pt;
+	text-indent: 66px;
+	line-height: 63px;
+	text-decoration: none;
+	border-bottom: 0 none;
+	margin: 10px auto;
+}
+
+#vcard_button[data-lang="ja"]
+{
+	font-size: 13pt;
+}
+
+#vcard_button:hover
+{
+	color: #aaa;
+	cursor: pointer;
+}
+
+.activities_list
+{
+	position: relative;
+	left: -3px;
+	margin-top: 15px;
+	width: 100%;
+}
+
+.activities_list li 
+{
+	width: 100%;
+	height: 70px;
+	position: relative;
+	margin-bottom: 7px;
+	line-height: 130%;
+	padding-top: 5px;
+	float: none;
+}
+
+.activities_list li img
+{
+	float: left;
+	padding-right: 7px;
+	position: relative;
+	top: -5px;
+}
+
+#twitter
+{
+	position: relative;
+	font-size: 10pt;
+	line-height: 150%;
+	width: 265px;
+	height: 100px;
+	background: url(../img/content_bg.png );
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid #444;
+	padding: 12px 15px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+#twitter .header
+{
+	font-weight: bold;
+	font-size: 9pt;
+	margin-bottom: 5px;
+}
+
+#twitter_loader
+{
+	width: 	28px;
+	height: 28px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -14px;
+	margin-top: -14px;
+}
+
+.twitter_icon_small { background-position: -75px 0; width: 16px; height: 16px; margin-right: 3px; top: 1px;  }
+
+#contact_list
+{
+	font-size: 12pt;
+	margin: 15px 0 25px;
+}
+
+#contact_list li
+{
+	margin: 0 0 15px;
+}
+
+.contact_icon 
+{ 
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	top: -3px;
+}
+
+.mail_icon { background-position: 0 0; }
+.skype_icon { background-position: -25px 0; }
+.site_icon { background-position: -50px 0; }
+
+#networks_list
+{
+	margin-top: 13px;
+	overflow: hidden;
+	width: auto;
+	margin-right: -30px;
+}
+
+#networks_list li
+{
+	position: relative;
+	display: inline;
+	float: left;
+	width: 48px;
+	height: 48px;
+	margin-right: 28px;
+	margin-bottom: 15px;
+}
+
+.network_icon
+{
+	width: 48px;
+	height: 48px;
+}
+
+.network_icon:hover
+{
+	cursor: pointer;
+}
+
+.twitter_icon 		{ background-position: 0px 	  -26px; }
+.linkedin_icon 		{ background-position: -49px  -26px; }
+.github_icon 		{ background-position: -98px  -26px; }
+.stackoverflow_icon { background-position: -147px -26px; }
+.foursquare_icon 	{ background-position: -196px -26px; }
+.facebook_icon 		{ background-position: -245px -26px; }
+.youtube_icon 		{ background-position: -294px -26px; }
+.flickr_icon 		{ background-position: -343px -26px; }
+.xboxlive_icon 		{ background-position: -392px -26px; }
+.steam_icon 		{ background-position: -441px -26px; }
+
+.network_icon span
+{
+	display: block;
+	position: absolute;
+	left: -999px;
+}
+
+#footer 
+{
+	clear: both;
+	font-size: 8pt;
+	text-align: center;
+	color: #999;
+	padding: 12px 0;
+	margin: 0 auto;
+}
